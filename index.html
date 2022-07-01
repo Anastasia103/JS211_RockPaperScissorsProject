@@ -3,13 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
+  
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Rock, Paper, Scissors</h1>
     <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
+    <label for="Handle1">Handle1</label>
+    <input type="text" name="Handle1" onkeyup="updatedHandle1()"placeholder="enter rock, paper, or scissors" id="handle1">
+    <label for="Handle2">Handle2</label>
+    <input type="text" name="Handle2" onkeyup="updatedHandle2()"placeholder="enter rock, paper, or scissors"id="handle2">
     <hr/>
-  </body>
+  <button onclick="rockPaperScissors()">Who Wins?</button>
+  <div id="whoWins"></div>
+  <script src="main.js"></script>  
+</body>
 </html>
